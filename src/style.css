@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'titleFont';
+    src: url(alt-title.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.static {
+    position: relative;
+}
+
+.header {
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-options {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    font-size: 20px;
+    border: none;
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgb(165, 42, 42);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.header-options:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hero {
+    width: 100vw
+
+}
+
+.title { 
+    width: max-content;
+    color: rgb(255, 255, 255);
+    font-family: 'titleFont', sans-serif;
+    font-size: 8vw;
+    position: absolute;
+    top: 30vh;
+    left: 50%;
+    transform: translate(-50%);
+}
