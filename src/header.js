@@ -1,6 +1,4 @@
 import './style.css'
-import { home } from './home.js'
-import { menu } from './menu.js'
 
 export function header() {
     const content = document.getElementById('content');

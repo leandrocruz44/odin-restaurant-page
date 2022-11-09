@@ -3,6 +3,16 @@
     src: url(alt-title.ttf);
 }
 
+@font-face {
+    font-family: 'copyFont';
+    src: url(copy-font.ttf);
+}
+
+:root {
+    --title: 'titleFont';
+    --copy: 'copyFont';
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,10 +25,9 @@
 
 .header {
     width: 100vw;
-    background-color: rgba(255, 255, 255, 0);
     color: white;
     position: absolute;
-    top: 50px;
+    top: 7%;
     left: 50%;
     transform: translate(-50%);
     z-index: 2;
@@ -27,18 +36,18 @@
 }
 
 .header-options {
-    background-color: rgba(255, 255, 255, 0);
     color: white;
-    font-size: 20px;
+    font-size: 1.6vw;
     border: none;
     font-family:'Times New Roman', Times, serif;
-    background-color: rgb(165, 42, 42);
+    background-color: rgba(165, 42, 42, 0.822);
     padding: 5px 10px;
     border-radius: 5px;
 }
 
 .header-options:hover {
-    text-decoration: underline;
+    transform: scale(1.1);
+    transition: all 0.2s ease;
     cursor: pointer;
 }
 
@@ -56,4 +65,109 @@
     top: 30vh;
     left: 50%;
     transform: translate(-50%);
+}
+
+.slogan {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    color: red;
+    text-shadow: white 3px 1px;
+    font-size: 6vw;
+    font-family: var(--copy);
+}
+
+.places {
+    position: absolute;
+    top: 55%;
+    left: 44%;
+    font-size: 2vw;
+    color: white
+}
+
+.quotes {
+    position: absolute;
+    color: white;
+    top: 75%;
+    left: 45%;
+    font-size: 3vw;
+    font-family: 'copyFont';
+}
+
+.p {
+    padding: 0.5vw;
+}
+
+.history-title {
+    position: absolute;
+    color: white;
+    top: 25%;
+    left: 45%;
+    font-family: var(--copy);
+    font-size: 6vw;
+}
+
+.lorem {
+    width: 45vw;
+    position: absolute;
+    color: white;
+    top: 37%;
+    left: 45%;
+    font-size: 1.5vw;
+    line-height: 3vw;
+}
+
+.menu {
+    position: absolute;
+    top: 30%;
+    left: 65%;
+    color: white;
+    font-family: var(--copy);
+    font-size: 8vw;
+}
+
+.pizzas {
+    position: absolute;
+    top: 45%;
+    left: 60%;
+    color: white;
+    font-family: var(--copy);
+    font-size: 3.5vw;
+}
+
+.place {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    font-size: 7vw;
+    font-family: var(--copy);
+    text-shadow: 2px 2px red;
+}
+
+.cards {
+    position: absolute;
+    width: 90vw;
+    height: 15vw;
+    top: 40%;
+    left: 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: rgba(245, 245, 220, 0.808);
+    border-radius: 10px;
+    width: 20vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn1 {
+    width: 10vw;
+    background-color: salmon;
 }
