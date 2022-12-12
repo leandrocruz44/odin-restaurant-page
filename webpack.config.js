@@ -1,10 +1,12 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 module.exports = {
     entry: './src/index.js',
     plugins: [
-            new FaviconsWebpackPlugin('./src/italy.svg')
+            new HtmlWebpackPlugin(),
+            new FaviconsWebpackPlugin('./src/logo.svg')
         ],
     output: {
         filename: 'main.js',
